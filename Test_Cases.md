@@ -4,7 +4,9 @@ Environment: Windows 11, Chrome 128, standard_user / secret_sauce
 
 | ID | Scenario | Precondition | Steps | Expected | Actual | Status |
 | TC01 | Valid login | On login page | Enter valid user+pass -> Login | Redirect to Products | Products shown | Pass |
+<img width="1366" height="768" alt="valid_login" src="https://github.com/user-attachments/assets/98295baa-02b0-499e-84c8-d2bc5044544d" />
 | TC02 | Invalid pass | On login page | Valid user + wrong pass | Error: Username and password do not match | Same error | Pass |
+<img width="1366" height="768" alt="invalid_login" src="https://github.com/user-attachments/assets/b8759112-8b93-4e71-ac97-e60673dd07f5" />
 | TC03 | Invalid user | On login page | Invalid user + valid pass | Error | Same | Pass |
 | TC04 | Empty both | On login page | Leave blank -> Login | Error: Username is required | Same | Pass |
 | TC05 | Empty password | On login page | User only | Error: Password is required | Same | Pass |
@@ -18,3 +20,4 @@ Environment: Windows 11, Chrome 128, standard_user / secret_sauce
 
 Execution: 12 Pass, 0 Fail - 100% Pass Rate
 Boundary cases: TC09 (min), TC10 (max) included as required.
+
